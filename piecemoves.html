@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cormorant+Garamond|Lobster|Lora|Satisfy&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Your Own CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Chess Fanatics</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Chess Fanatics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="puzzles.html" target="_blank">Puzzles</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Rules
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="piecemoves.html" target="_blank">Piece Moves</a>
+            <a class="dropdown-item" href="advanced.html" target="_blank">Advanced</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><em>Advanced Strategies - Coming
+              Soon</em></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <p>
+
+  </p>
+
+  <div class="card">
+    <div class="card-body">
+      <em><strong>Congrats!</strong> You are already on your way to learning chess! Below, you'll find a quick primer
+        that breaks down the basic moves of each chess piece, the piece's relative value, and movement illustrations. Be
+        sure to visit Advanced Moves afterwards.</em>
+    </div>
+  </div>
+
+  <div class=“container”>
+    <div class=“row”>
+      <div class="col-md-12"></div>
+    </div>
+  </div>
+
+  <p>
+  </p>
+
+  <div class=row>
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <tr class=table-headers>
+          <td>
+            PIECE NAME
+          </td>
+          <td>
+            POINT VALUE
+          </td>
+          <td>
+            MOVEMENT RULES
+          </td>
+          <td>
+            ILLUSTRATION
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Pawn</strong></td>
+          <td><strong>1 Point</strong></td>
+          <td><u>General</u>: Pawns can move forward one square, if that square is unoccupied. If it has not yet moved,
+            the pawn has the option of moving two squares forward.
+
+            <p></p>
+            <u>Capture</u>:
+            Pawns are the only pieces that capture differently from how they move. They can capture an enemy piece on
+            either of the two spaces diagonal to the space in front of them. If the pawn reaches the eighth rank, it can
+            be promoted to a knight, bishop, rook, or queen.
+
+          </td>
+          <td><img class=img-shrink src="Pawn.jpg"></td>
+        </tr>
+        <tr>
+          <td><strong>Knight</strong></td>
+          <td><strong>3 Points</strong> (<em>In general, Knights are considered more valuable than Bishops at the
+              beginning of the game, as the board is crowded with other pieces</em></td>
+          <td>Knights can move one square along any rank or file and then again at an angle. The knight´s movement can
+            also be viewed as an “L” or “7″ shape.</td>
+          <td><img class=img-shrink src="Knight.jpg"></td>
+        </tr>
+        <tr>
+
+          <td><strong>Bishop</strong></td>
+          <td><strong>3 Points</strong> (<em>In general, Bishops are considered more valuable than Knights at the end of
+              the game, as the board begins to clear out</em></td>
+          <td>Bishop can move any number of vacant squares in any diagonal direction.</td>
+          <td><img class=img-shrink src="Bishop.jpg"></td>
+        </tr>
+        <tr>
+          <td><strong>Rook (Castle)</strong></td>
+          <td><strong>5 Points</strong></td>
+          <td>Rook can move any number of vacant squares vertically or horizontally. See advanced rules for castling.
+          </td>
+          <td><img class=img-shrink src="Rook.jpg"></td>
+        </tr>
+        <tr>
+          <td><strong>Queen</strong></td>
+          <td><strong>9 Points</strong></td>
+          <td>Queen can move any number of vacant squares diagonally, horizontally, or vertically.</td>
+          <td><img class=img-shrink src="Queen.jpg"></td>
+        </tr>
+        <tr>
+          <td><strong>King</strong></td>
+          <td><strong>N/A</strong></td>
+          <td>King can move exactly one square horizontally, vertically, or diagonally. At most once in every game, each
+            king is allowed to make a special move, known as castling. See advanced rules for castling</td>
+          <td><img class=img-shrink src="King.jpg"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Footer -->
+
+  <div>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      <a class="btn btn-warning" href="https://www.chess.com" target="_blank" role="button">Play Online!</a>
+      <a class="btn btn-success" href="contact.html" target="_blank">Contact Us</a>
+    </nav>
+  </div>
+</body>
+
+</html>

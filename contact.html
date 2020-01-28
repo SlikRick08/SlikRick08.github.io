@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <!-- Required Meta Tags -->
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -18,13 +18,20 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <!-- Your Own CSS -->
+  <!-- My own CSS -->
   <link rel="stylesheet" href="styles.css">
 
   <title>Chess Fanatics</title>
 </head>
 
 <body>
+  <!-- Navbar -->
+  <!-- https://getbootstrap.com/docs/4.4/components/navbar -->
+  <!-- I'm using the "navbar-light" color scheme, and a custom background color, defined in my styles.css -->
+  <!-- Because the navbar has a "container" inside, it has gutters (spacing) on the left and right -->
+  <!-- https://getbootstrap.com/docs/4.4/components/navbar/#containers -->
+
+
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Chess Fanatics</a>
@@ -60,94 +67,61 @@
     </div>
   </nav>
 
-  <div class="jumbotron">
-    <h1 class="display-4">Chess Fanatics!</h1>
-    <p class="lead">Your first source for information on chess rules, news, and strategy!</p>
-    <hr class="my-4">
-    <p class="p-class"><em>New to the game? Click below to learn the basics and get started in no time!</em></p>
-    <a class="btn btn-primary btn-lg" href="piecemoves.html" role="button">Chess Basics</a>
+
+  <hr class="my-4">
+
+  <div class="container text-center">
+    <h1><strong>CONTACT US</strong></h1>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col text-center">
-        <h2>Current Happenings in the World of Chess</h2>
+  <div class="container my-5">
+    <form action="https://formspree.io/xeqadnoj" method="post">
+      <div class="form-group">
+        <label for="name"><strong>Your Name (First + Last)</strong></label>
+        <input type="text" class="form-control" id="name" name="name">
       </div>
-    </div>
-    <!-- An example of Bootstrap's spacing utility classes -->
-    <!-- https://getbootstrap.com/docs/4.4/utilities/spacing/#how-it-works -->
-    <!-- The "mt-4" gives you more margin on top, responsively -->
-    <div class="row mt-4">
-      <div>
-        <table class=table>
-          <tr>
-            <td>
-              <h1><i class="fas fa-chess-king"></i></h1>
-              <h5>Magnus Wins World Chess Championship</h5>
-              <h3>
-                <p></p>Magnus Carlsen defies the odds yet again, claiming his "World Chess Champion" title while
-                defeating
-                Fabiano Caruana in a 12-game match. The game came down to tiebreaks, but Magnus came out victorius.
-              </h3>
-            </td>
-            <td>
-              <img class=img-resize src="Magnus-Carlsen.jfif">
-            </td>
-          </tr>
-        </table>
-        <p></p>
+      <div class="form-group">
+        <label for="email"><strong>Email Address</strong></label>
+        <input type="email" class="form-control" id="email" name="email">
+        <small class="form-text text-muted"><em>By contacting Chess Fanatics, you accept that we may send promotional
+            materials related to local tournaments, match results, and chess strategies from time to time.</em></small>
       </div>
-      <div>
-        <table class=table>
-          <tr>
-            <td>
-              <h1><i class="fas fa-chess-rook"></i></h1>
-              <h5>Research Finds Chess More Beneficial In Lower Grades</h5>
-              <h3>
-                <p></p>The preliminary findings of a multi-year study across the state of Alabama seem to indicate that
-                chess
-                instruction may improve student performance, especially amongst younger students.
-              </h3>
-            </td>
-            <td>
-              <img class=img-resize src="Chess-Young.jpeg">
-            </td>
-          </tr>
-        </table>
-        <p></p>
+      <div class="form-group">
+        <label for="phone"><strong>Phone Number</strong></label>
+        <input type="phone" class="form-control" id="phone" name="phone">
       </div>
-      <div>
-        <table class=table>
-          <tr>
-            <td>
-              <h1><i class="fas fa-chess-queen"></i></h1>
-              <h5>Google's AlphaZero Shows Promise</h5>
-              <h3>
-                <p></p>In news reminiscent of last year's shockwave, AlphaZero, Google's AI chess engine, defeated
-                StockFish 8 in a
-                new 1,000 game match, scoring +155 to StockFish's -6. AlphaZero continues to set new boundaries in the
-                world
-                of machine learning and chess.
-              </h3>
-            </td>
-            <td>
-              <img class=img-resize src="AlphaZero.jpg">
-            </td>
-          </tr>
-        </table>
+      <div class="form-group">
+        <label><strong>Chess ELO</strong></label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="contactMethod" id="contactEmail" value="email" checked>
+          <label class="form-check-label" for="contactEmail">
+            Beginner - Below 1500
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="contactMethod" id="contactPhone" value="phone">
+          <label class="form-check-label" for="contactPhone">
+            Intermediate - Between 1501 & 1750
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="contactMethod" id="contactPigeon" value="pigeon">
+          <label class="form-check-label" for="contactPigeon">
+            Advanced - Greater than 1750
+          </label>
+        </div>
       </div>
-    </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </div>
 
-  <!-- Horizontal Line: "Horizontal Rule" with some space on the y-axis -->
   <hr class="my-4">
 
   <!-- Footer -->
 
   <div>
     <nav class="navbar fixed-bottom navbar-light bg-light">
-      <a class="btn btn-warning" href="https://www.chess.com" target="_blank" role="button">Play Online!</a>
-      <a class="btn btn-success" href="contact.html" target="_blank">Contact Us</a>
+      <a class="navbar-brand" href="contact.html">Contact Us</a>
     </nav>
   </div>
 

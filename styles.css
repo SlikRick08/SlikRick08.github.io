@@ -1,45 +1,114 @@
-body {
-font-family: 'Roboto', sans-serif;}
-
-h1,
-h2 {
-    color: purple;
-    font-size: 96px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 5px;
-    border: 5px groove blueviolet;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: 'Acme', sans-serif;
+.body{
+    font-family: 'Cormorant Garamond', serif;
+    background-color: lightyellow;
 }
 
-img {
-    height: 320px;
+.h1 h1 {
+    color: white;
 }
 
-/* width = 320 Cascading Style Sheets. The bottom items (# first) would win out over the other elements*/
-em {
-    text-transform: uppercase;
-    font-style: initial;
+.jumbotron {
+    /* Background */
+    background-attachment: fixed;
+    background-image: url(Chess-Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;;
 }
 
-#first {
-    text-align: left;
-    /* }
-#second {
-    text-align: right;
-} */
+.table {
+    margin-left: 24px;
+    margin-right: 24px;
+    border-left: 24px;
+    border-right: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 96%;
+    table-layout: fixed;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .table-headers {
+      text-align: center;
+      font-weight: bold;
+  }
+
+  .table-bordered {
+      border-style: solid;
+      border-width: 2px;
+      color: black;
+  }
+
+  .img-shrink {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+    width: 90%;
+  }
+
+  .container {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .img-resize {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .display-4 {
+      font-weight: bolder;
+      font-size: 4.8rem;
+  }
+
+  .lead {
+    font-weight: bolder;
+    font-size: 1.4rem; 
+  }
+
+  .navbar {
+    font-family: 'Satisfy', serif;
+  }
+
+  .h2, h2 {
+    font-family: 'Satisfy', serif;
+    font-size: 1.8rem;
+  }
+
+  .h3, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
 }
 
-.right {
-    text-align: right;
+  .h5, h5 {
+    font-family: 'Satisfy', serif;
+    font-size: 1.6rem;
 }
-.big{
-    font-size: 32px;
+
+.card {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
 }
-p {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+
+.card-header .h5, h5 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+}
+
+.btn-link {
+    font-weight: 400;
+    color:red;
+    text-decoration: none;
+}
+
+.btn-link.focus, .btn-link:focus {
+    box-shadow: none;
+    color: red;
+}
+
+.p-class {
+    font-size: 1.2rem;
 }
